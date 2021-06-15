@@ -7,7 +7,7 @@ function Cards(props) {
 
     const [characters, setState] = useState([])
 
-    const api = 'https://rickandmortyapi.com/api/character/'
+    const api = 'https://rickandmortyapi.com/api/character/?page=8'
 
     useEffect(() => {
         axios.get(api)
@@ -24,6 +24,7 @@ function Cards(props) {
             <div className='container'>{characters.map(character => <div className='card' key={character.id} onClick={() => props.onIdChange(character.id)}>
                 <img id={character.id} src={character.image} alt="no-img" ></img>
                 <h4>{character.name}</h4>
+                <button>Like</button>
             </div >)}</div>
         </div >
 

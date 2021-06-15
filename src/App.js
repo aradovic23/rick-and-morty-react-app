@@ -8,18 +8,13 @@ import React, {
 
 
 function App() {
-
   const [id, setId] = useState('')
 
-  return ( < >
-    <
-    Header / > {
-      !id ? < Cards onIdChange = {
-        setId
-      }
-      /> : <Card id={id} / >
-    } <
-    />
+  return ( 
+  <>
+    <Header /> {
+      !id ? < Cards onIdChange = {setId}/> : <Card id={id} /> } 
+      </>
   );
 }
 
