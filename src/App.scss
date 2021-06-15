@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+body {
+  background-image: url('https://i.pinimg.com/originals/13/71/f9/1371f9fe9bad7fbf2693aa64261f0d46.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
