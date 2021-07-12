@@ -1,8 +1,6 @@
 // variable
 $color-card: #1b2225;
 
-
-
 .wrapper {
     max-width: 960px;
     width: 100%;
@@ -33,13 +31,14 @@ $color-card: #1b2225;
     }
 
     button {
-        width: 50%;
+        width: 30%;
         padding: 5px;
-        margin-bottom: 10px;
-        background-color: $color-card;
-        color: white;
-        border: 1px solid white;
+        margin-bottom: 20px;
+        background-color: #08B2C9;
+        color: $color-card;
+        border: 1px solid #08B2C9;
         border-radius: 10px;
+        font-weight: bold;
     }
 
 }

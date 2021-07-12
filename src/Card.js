@@ -14,9 +14,11 @@ const Card = ({ id }) => {
                 charState(data.data)
                     ;
             }, [])
+    },)
 
-    }, [])
-
+    const reloadPage = () => {
+        window.location.reload()
+    }
 
     return (
         <div className='char-container'><div className='marina'>
@@ -25,6 +27,9 @@ const Card = ({ id }) => {
             <span>Species: {singleChar.species}</span>
             <span>Status: {singleChar.status}</span>
             <span>Gender: {singleChar.gender}</span>
+            <span>Found in: {singleChar.location?.name}</span>
+            
+            <button onClick={reloadPage}>go back</button>
         </div>
         </div>
     )

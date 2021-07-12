@@ -1,3 +1,5 @@
+// variable
+$color-card: #1b2225;
 .char-container {
     width: 100%;
     max-width: 500px;
@@ -29,5 +31,16 @@
 
     span {
         color: white;
+    }
+    button {
+        width: 30%;
+        padding: 5px;
+        margin-top: 20px;
+        background-color: #08B2C9;
+        color: $color-card;
+        border: 1px solid #08B2C9;
+        border-radius: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
     }
 }
